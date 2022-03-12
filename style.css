@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Montserrat:wght@100&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("https://images.pexels.com/photos/3771120/pexels-photo-3771120.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  font-family:Verdana, Geneva, Tahoma, monospace;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  background-color: white;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12;
+  overflow: hidden;
+  width: calc(100vw - 65vw);
+  max-width: 100%;
+}
+.header {
+  background: linear-gradient(to bottom, #fdf904 0%, #a5c203b2 100%);
+  padding: 30px 0;
+}
+.header h2 {
+  color: #7681b3;
+  font-family: monospace;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.form {
+  padding: 40px;
+}
+.form-control {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.form-control label {
+  display: inline-block;
+  margin-bottom: 3px;
+}
+.form-control input {
+  width: 100%;
+  border: 2px solid #f0f0f0;
+  border-radius: 5px;
+  display: block;
+  font-size: 15px;
+  padding: 12px;
+}
+.form-control input:focus {
+  outline: 0;
+  border-color: #777;
+}
+.form-control.success input {
+  border-color: #2ecc71;
+}
+.form-control.error input {
+  border-color: #e74c3c;
+}
+
+.form-control i {
+  position: absolute;
+  right: 12px;
+  top: 38px;
+  visibility: hidden;
+}
+.form-control.success i.fa-circle-check{
+  color: #2ecc71;
+  visibility: visible;
+}
+
+.form-control.error i.fa-circle-exclamation {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+.form-control small {
+  color: #e74c3c;
+  position: absolute;
+  left: 0;
+  visibility: hidden;
+}
+.form-control.error small {
+  visibility: visible;
+}
+
+.form .btn {
+  background: linear-gradient(to top, #fdf904, #bbd61fb2);
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  color: #7681b3;
+  display: block;
+  font-family: monospace;
+  font-size: 20px;
+  padding: 15px 0;
+  margin-top: 20px;
+  width: 100%;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all ease;
+  cursor: pointer;
+}
+
+.form .btn:hover {
+  background: linear-gradient(to top, #5c9c13, #11b31a);
+  color: white;
+}
+
+@media (max-width: 998px) {
+  .container {
+    width: calc(100vw - 35vw);
+    max-width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+/*  linear-gradient(to bottom, #68EACC 0%, #497BE8 100%);
+
+    background: linear-gradient(to top, #2bf5d0, #8193e6); */
